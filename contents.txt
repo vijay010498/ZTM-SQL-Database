@@ -1,2 +1,37 @@
 section 2 : History and story of data
 1. What is database
+    // collection of data, a method for accessing and manipulating the data
+    // storing data / but not using is waste
+    // At the end -  database is just a disk with data written on it
+    DBMS
+    // Database Management System -  software to manage databases
+    RDBMS
+    Relational DataBase Management System
+    SQL
+    Structured Query Language
+// 8.
+1. How to put a data into database
+2. DBMS,RDBMS - CRUD
+3. SQL - Not programming language but query language
+
+// 9
+// Building Amazon
+    // Name - product - Quantity - Address in Excel sheet
+// 10
+    // Building Amazon 2
+    // Things are getting bigger - we need to build a database
+    // Put data into database from Excel sheet
+    // Customers Table [customerId, Name, Address]
+    // Products Table [ProductID, Name, Price]
+    // Orders Table [OrderID, CustomerID, ProductID, Quantity]
+    // Customer Address Update - Update at one place [customer Table] - Get Correct data at any time
+    // SQL - Structured Query Language
+
+// 11
+    // Types of databases
+    // Relational Model - MySql , PostgreSQL - Supports ACID properties
+    // Document Model - MongoDB , CouchDB - For Scalability
+    // Key Value Model - Redis , Cassandra - For Speed
+    // Graph Model - Neo4J , Gremlin - For Connected Data
+    // Wide Columnar - Google Big Table - For Scalability
+
