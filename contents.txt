@@ -29,9 +29,71 @@ section 2 : History and story of data
 
 // 11
     // Types of databases
-    // Relational Model - MySql , PostgreSQL - Supports ACID properties
+    // Relational Model - MySql , PostgresSQL - Supports ACID properties
     // Document Model - MongoDB , CouchDB - For Scalability
     // Key Value Model - Redis , Cassandra - For Speed
     // Graph Model - Neo4J , Gremlin - For Connected Data
     // Wide Columnar - Google Big Table - For Scalability
 
+// 14
+    // SQL - Playground - https://www.db-fiddle.com/f/ogAiTgZPjwvDxwVHiVK3Ek/0
+
+// 15
+    // What is SQL ?  - Language used to talk to a database
+
+// 16
+    // What is a Query / SQL ? - A statement that is sent to a database to get data from it
+    // SELECT * FROM USERS // Get everything from users table
+    // Query Breakdown - SELECT NAME FROM USERS WHERE ROLE = 'MANAGER';
+    // Query Comments - SELECT * FROM USERS --- WHERE ROLE = 'MANAGER';
+
+
+// 18
+    // Imperative vs declarative
+    // SQL is declarative - what will happen -  No idea about how it will happen
+    // Imperative -  How will happen
+
+// 19
+    // History of SQL
+
+// 28
+    // Relational Model
+    // There is a Relational between data
+
+// 29
+    //DBMS
+    // Database Management Software
+    // Mediator between data and sql
+    // CRUD
+
+// 34
+    //Primary and Foreign Keys - Manages Relational
+    // Primary KEY
+        //Unique identifier for each and every ROW
+    // Foreign KEY
+        // Link Primary Key into another table as foreign key
+
+// 35 - OLTP vs OLAP
+    // OLTP - Transaction process - Day to Day
+    // OLAP - Analytics Processing -> Data warehousing
+
+// 39
+    // why postgres ?
+    // Most popular - Open Source
+    // Great for production environment
+
+// 53
+    // Query along
+    // DCL - Data Control Language - GRANT REVOKE
+    // DDL - Data Definition Language - Create ALter Drop Rename
+    // DQL - Data query Language - SELECT
+    // DML - Data Modification Language - INSERT UPDATE DELETE MERGE CALL
+
+// 57
+    // Functions is SQL
+    // Types of functions
+        // Aggregate - Take all values and return one value
+        // Scalar - Run against each individual row
+
+// 58
+    // Aggregate Functions
