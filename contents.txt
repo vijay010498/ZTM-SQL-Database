@@ -97,3 +97,21 @@ section 2 : History and story of data
 
 // 58
     // Aggregate Functions
+    // AVG()
+    // COUNT()
+    // MIN()
+    // MAX()
+    // SUM()
+
+// 61
+    // Common Select Mistakes
+    // Typo
+
+// 62
+    // Filter Data
+    // Where Clause
+
+// 65
+    // Not KW
+    // want all data but this ?
+    // Ex. get all data except this
