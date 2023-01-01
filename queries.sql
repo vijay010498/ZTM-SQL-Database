@@ -74,3 +74,43 @@ WHERE NOT gender = 'M';
 -- customers not 55
 SELECT count(firstname) AS "Not 55" from customers
     WHERE NOT age = 55;
+
+-- comparison operators
+-- who over age of 44 and has an income of 100000?
+SELECT first_name, last_name, gender, age, income FROM employees
+WHERE age > 44 AND income < 100000;
+
+-- Female customers from OR
+SELECT firstname, gender, state from customers
+WHERE gender = 'F' AND state = 'OR';
+
+
+-- What is the average income between the ages of 20 and 50?
+SELECT avg(income) AS "AVERAGE INCOME" from customers
+where age > 20 AND age < 50;
+
+-- operator precedence
+SELECT state, gender FROM customers
+WHERE (state = 'OR' OR state = 'NY') AND gender = 'F';
+
+-- two filters
+SELECT firstname, lastname, gender, age, income FROM customers
+WHERE (
+    income > 100000 AND state = 'NY'
+    OR (
+        ( age >20 AND age < 30)
+        AND income <= 20000
+        )
+    ) AND gender = 'F';
+
+-- * Select people either under 30 or over 50 with an income above 50000
+-- * Include people that are 50
+-- * that are from either Japan or Australia
+SELECT firstname, age, country, income from customers
+WHERE ( age < 30 OR age >= 50 ) AND income > 50000
+AND ( country = 'Japan' OR country = 'Australia');
+
+--What was our total sales in June of 2004 for orders over 100 dollars
+SELECT sum(totalamount) from orders
+WHERE ( orderdate >= '2004-06-01' AND orderdate <= '2004-06-30' )
+AND totalamount > 100;

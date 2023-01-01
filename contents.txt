@@ -114,4 +114,22 @@ section 2 : History and story of data
 // 65
     // Not KW
     // want all data but this ?
-    // Ex. get all data except this
+    // Ex. get all data except
+
+// 69
+    // Order of operations
+        // FROM -> WHERE -> SELECT
+
+// 70
+    // Operator precedence
+    // Priority of operators
+    // Parenthesis
+    // Multi / division
+    // sub/ add
+    // NOT
+    // AND
+    // OR
+
+// 71
+    // Same precedence
+    // Them from Left to Right
