@@ -152,7 +152,7 @@ WHERE (orderdate >= '2004-06-01' AND orderdate <= '2004-06-30')
 
 -- IS keyword
 SELECT firstname, lastname, age FROM customers
-WHERE firstname IS  NOT NULL;
+WHERE NULL IS NOT NULL;
 
 -- NULL coalesce
 SELECT coalesce(firstname, 'noname') AS "GG" FROM customers;
@@ -160,3 +160,37 @@ SELECT coalesce(firstname, 'noname') AS "GG" FROM customers;
 -- WITH SUM
 SELECT sum(coalesce(age, 20)) FROM customers;
 
+-- Three-valued logic
+--adjust the following query to display the null values as "No Address"
+SELECT coalesce(address2, 'No Address') AS "Address 2",firstname FROM customers;
+
+--Fix the following query to apply proper 3VL
+SELECT *
+FROM customers
+WHERE address2 IS NOT NULL;
+
+--Fix the following query to apply proper 3VL
+SELECT coalesce(lastName, 'Empty'), * from customers
+where (age IS null);
+
+-- BETWEEN + AND 80
+-- Who between the ages of 30 and 50 has an income less than 50 000
+SELECT firstname, age, income FROM customers WHERE age BETWEEN 50 AND 50 AND (
+    income < 50000
+    );
+
+--What is the average income between the ages of 20 and 50? (Including 20 and 50)
+SELECT avg(income) AS "Average Income" FROM customers
+WHERE age BETWEEN 20 AND 50;
+
+-- IN keyword
+SELECT * FROM employees
+WHERE emp_no IN (100001, 100006, 11008);
+
+-- How many orders were made by customer 7888, 1082, 12808, 9623
+SELECT count(orderid) as "Total Orders"  FROM orders
+WHERE customerid IN (7888, 1082, 12808, 9623);
+
+--How many cities are in the district of Zuid-Holland, Noord-Brabant and Utrecht
+SELECT count(id) FROM city
+WHERE district IN ('Zuid-Holland', 'Noord-Brabant', 'Utrecht');

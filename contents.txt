@@ -142,3 +142,17 @@ section 2 : History and story of data
 
 // 76
     // NULL coalescing
+
+// 78
+    // Three-valued logic
+    // Result of logical expressions can also be unknown
+    // Besides true and false
+    // unlike other pgm SQL has true/ false and NULL in logical expressions
+
+// 80
+    // BETWEEN + AND
+    // shorthand to match against a range of values
+
+// 82
+    // IN Keyword
+    // Value matches in a list of values
