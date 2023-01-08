@@ -133,3 +133,12 @@ section 2 : History and story of data
 // 71
     // Same precedence
     // Them from Left to Right
+
+// 74
+    // checking for NULL values
+
+// 75
+    // IS keyword
+
+// 76
+    // NULL coalescing
